@@ -1,0 +1,77 @@
+# Metas de peso e cronograma do plano
+
+plano:
+  nome: "Recompromisso 101 → 92 → 78"
+  data_inicio: "2026-06-07"
+  agressividade: agressivo
+
+fases:
+  - id: "0-reset"
+    nome: "Reset"
+    duracao_semanas: 2
+    peso_inicio_kg: 101.0
+    peso_fim_kg: 99.0
+    objetivo: "Reativar treino, zerar álcool, instalar tracking"
+    data_fim_prevista: "2026-06-21"
+    criterios_saida:
+      - "2 semanas completas"
+      - "Treino 6/6 sessões"
+      - "Álcool zero (semana inteira)"
+      - "Sono médio ≥ 6,5 h"
+
+  - id: "1-recorte-a"
+    nome: "Recorte A"
+    duracao_semanas_min: 14
+    duracao_semanas_max: 16
+    peso_inicio_kg: 99.0
+    peso_fim_kg: 92.0
+    objetivo: "Déficit agressivo, primeira metade"
+    data_inicio_prevista: "2026-06-21"
+    data_fim_prevista: "2026-10-15"
+    criterios_saida:
+      - "Atingiu 92 kg"
+      - "Média móvel 7d estável por ≥ 2 semanas"
+
+  - id: "2-consolidacao"
+    nome: "Consolidação"
+    duracao_semanas_min: 3
+    duracao_semanas_max: 4
+    peso_inicio_kg: 92.0
+    peso_fim_kg: 92.0
+    objetivo: "Reverse diet + estabilização metabólica"
+    data_inicio_prevista: "2026-10-15"
+    data_fim_prevista: "2026-11-12"
+    criterios_saida:
+      - "Reverse diet completo (+100 kcal/sem até TDEE)"
+      - "Peso estabilizado 7 dias seguidos"
+
+  - id: "3-recorte-b"
+    nome: "Recorte B"
+    duracao_semanas_min: 20
+    duracao_semanas_max: 24
+    peso_inicio_kg: 92.0
+    peso_fim_kg: 78.0
+    objetivo: "Déficit moderado sustentado"
+    data_inicio_prevista: "2026-11-12"
+    data_fim_prevista: "2027-04-15"
+    criterios_saida:
+      - "Atingiu 78 kg"
+      - "Reverse diet feito"
+      - "Força mantida ou aumentada"
+
+  - id: "4-manutencao"
+    nome: "Manutenção vitalícia"
+    peso_alvo_kg: 78.0
+    peso_tolerancia_kg: 2.0
+    objetivo: "Manter 78 ± 2 kg"
+    permanente: true
+
+medicacao:
+  rybelsus:
+    status: "suspenso"
+    plano: "1 mês sem, revisar injetável no mês 2"
+    decisao_pendente_em: "2026-07-07"
+  injetavel:
+    status: "em_avaliacao"
+    candidatos: ["tirzepatida", "semaglutido"]
+    criterio_decisao: "resultado das Fases 0 e 1 sem medicação"

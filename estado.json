@@ -1,0 +1,87 @@
+{
+  "versao": 1,
+  "data_atualizacao": "2026-06-07",
+  "pessoa": {
+    "iniciais": "",
+    "data_inicio_plano": "2026-06-07"
+  },
+  "biometria": {
+    "altura_cm": 173,
+    "idade": 45,
+    "sexo": "M",
+    "tmb_kcal": 1871,
+    "tdee_kcal": 2575
+  },
+  "saude": {
+    "comorbidades": [],
+    "medicacao": [],
+    "rybelsus": {
+      "status": "suspenso",
+      "data_suspensao": null,
+      "plano": "manter 30 dias sem, revisar injetavel no mes 2"
+    }
+  },
+  "fase_atual": "0-reset",
+  "fase_nome": "Reset",
+  "semana_plano": 1,
+  "data_inicio": "2026-06-07",
+  "peso": {
+    "atual_kg": 101.0,
+    "inicio_plano_kg": 101.0,
+    "media_7d_kg": null,
+    "delta_semanal_kg": null,
+    "meta_fase_kg": 99.0,
+    "meta_intermediaria_kg": 92.0,
+    "meta_final_kg": 78.0,
+    "data_meta_intermediaria": "2026-10-15",
+    "data_meta_final": "2027-04-15"
+  },
+  "macros_hoje": {
+    "data": "2026-06-07",
+    "tipo_dia": "treino",
+    "kcal": 2250,
+    "proteina_g": 160,
+    "gordura_g": 70,
+    "carbo_g": 230
+  },
+  "treino": {
+    "meta_semanal": 3,
+    "feitas_semana": 0,
+    "tipo_dia_hoje": "treino"
+  },
+  "alcool": {
+    "meta_semanal": 0,
+    "consumido_semana": 0
+  },
+  "sono": {
+    "media_7d_horas": null
+  },
+  "fome": {
+    "media_7d": null
+  },
+  "aderencia": {
+    "media_7d_kcal": null,
+    "delta_aderencia_pct": 0
+  },
+  "alertas": [
+    "inicio_plano"
+  ],
+  "ultima_revisao_semanal": "2026-06-07",
+  "proximos_marcos": [
+    {
+      "peso_kg": 99.0,
+      "data_prevista": "2026-06-21",
+      "fase": "0-reset"
+    },
+    {
+      "peso_kg": 92.0,
+      "data_prevista": "2026-10-15",
+      "fase": "1-recorte-a"
+    },
+    {
+      "peso_kg": 78.0,
+      "data_prevista": "2027-04-15",
+      "fase": "3-recorte-b"
+    }
+  ]
+}

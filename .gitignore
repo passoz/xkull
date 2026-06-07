@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Não commitar dados pessoais (manuais, se houver)
+# metricas/*.csv  -> descomente se quiser versionar os dados
+# diario/*.md     -> descomente se quiser versionar diários

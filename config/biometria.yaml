@@ -1,0 +1,36 @@
+# Biometria e dados estáticos da pessoa
+# Estes valores raramente mudam. Edite apenas se houver mudança real.
+
+altura_cm: 173
+idade: 45
+sexo: M
+data_nascimento: null
+
+# Calculados por Mifflin-St Jeor
+tmb_kcal: 1871
+
+# TDEE estimado com musculação 4x/sem + cardio leve
+tdee_kcal: 2575
+tdee_sem_rebelsus_kcal: 2575   # igual sem medicação (efeito é comportamental)
+
+# Rotina
+trabalho: sedentario_escritorio
+sono_meta_horas: 7
+sono_minimo_aceitavel_horas: 6
+horas_acordado_estimadas: 17
+
+# Composição atual (estimada)
+massa_magra_estimada_kg: 65
+massa_gorda_estimada_kg: 36
+gordura_corporal_pct: 35.6
+
+# Comportamento
+bebe_alcool: true
+alcool_frequencia_historica: "3-5 doses/sem (cerveja e vinho)"
+fumante: false
+
+# Saúde
+comorbidades: []
+medicacao_atual: []
+alergias_alimentares: []
+restricoes_alimentares: []

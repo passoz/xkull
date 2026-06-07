@@ -1,0 +1,95 @@
+# Regras de decisão que o Hermes aplica automaticamente
+# Thresholds para os ajustes do plano em tempo real
+
+# --- Peso e tendência ---
+peso:
+  queda_minima_esperada_kg_sem: 0.5     # déficit agressivo exige isso
+  queda_minima_aceitavel_kg_sem: 0.3
+  plato_semanas_para_ajustar: 2
+  regain_2_semanas_kg: 1.0               # se ganhar isso em 2 semanas → day-reset
+  delta_minimo_significativo_kg: 0.2    # abaixo disso, é oscilação normal
+
+# --- Ajustes de calorias ---
+calorias:
+  corte_por_plato_kcal: 150
+  aumento_por_fome_alta_kcal: 200
+  piso_kcal: 1500
+  reverse_diet_incremento_kcal_sem: 100
+  reverse_diet_max_semanas: 4
+
+# --- Cardio ---
+cardio:
+  extra_se_plato_sessoes: 1
+  liss_minutos: 30
+  liss_max_minutos: 60
+
+# --- Fome ---
+fome:
+  escala: 10                              # 0 = sem fome, 10 = incontrolável
+  threshold_alto: 7
+  dias_seguidos_para_ajustar: 3
+  estrategia_pre_ativacao:
+    - "beber 500ml água"
+    - "esperar 20 min"
+    - "chá de canela/cravo"
+    - "se persistir: porção proteica (ovo, whey, iogurte)"
+
+# --- Sono ---
+sono:
+  minimo_horas: 6
+  meta_horas: 7
+  ruim_se_abaixo_horas: 6
+  dias_seguidos_ruim_para_pausar_deficit: 5
+  acao_se_pausar: "manutenção por 7 dias, depois retomar déficit"
+
+# --- Álcool ---
+alcool:
+  meta_fase_0: 0
+  meta_fase_1: 0
+  meta_fase_2: 0
+  meta_fase_3: 2                          # doses/sem
+  meta_fase_4: 3                          # doses/sem, com moderação
+  excesso_consecutivo_semanas_para_intervir: 2
+  acao_se_excesso: "zerar 1 semana inteira + conversa de alinhamento"
+
+# --- Treino ---
+treino:
+  meta_fase_0_sessoes: 3
+  meta_fase_1_sessoes: 4
+  meta_fase_2_sessoes: 4
+  meta_fase_3_sessoes: 4
+  meta_fase_4_sessoes: 4
+  falta_2_semanas_seguidas_acao: "alertar e propor plano de encaixe"
+  progressao_carga_kg: 2.5
+  progressao_periodo_dias: 7
+
+# --- Refeição livre ---
+refeicao_livre:
+  ativa_em: "3-recorte-b"
+  frequencia: quinzenal                  # uma vez a cada 2 semanas
+  dia_preferido: domingo
+  refeicao: almoco
+  limite_kcal: 1500
+  sem_compensar_dia_seguinte: true
+
+# --- Day-reset (botão de emergência) ---
+day_reset:
+  trigger: "regain ≥ 1 kg em 2 semanas"
+  protocolo:
+    - "jejum 24h (água, café preto, chá)"
+    - "dia seguinte: manutenção (TDEE)"
+    - "volta ao plano original"
+    - "log em decisoes/"
+
+# --- Aderência ---
+aderencia:
+  janela_kcal_aceitavel_pct: 10          # ±10% da meta conta como aderente
+  dias_aderentes_minimos_semana: 5
+  falha_2_semanas_seguidas_acao: "revisar cardápio e timing das refeições"
+
+# --- Macros ---
+macros:
+  proteina_minima_g_dia: 130
+  gordura_minima_pct_kcal: 20
+  gordura_maxima_pct_kcal: 40
+  carbo_minimo_g_dia: 80                  # piso neurológico
