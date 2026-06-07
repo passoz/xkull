@@ -1,42 +1,38 @@
 # Check-in da manhã
 
-**Quando**: 7h–9h (escolher um horário fixo, sugerir 7:30).
-**Duração**: ≤ 2 min de resposta do usuário.
+**Quando**: 5:35, segunda a sexta.
+**Duração**: ≤ 30 segundos de resposta.
+**Quem responde**: Fernando.
 
 ## Mensagem (template)
 
 ```
-Bom dia. Dia {{N}} do plano, semana {{S}}, fase {{FASE}}.
+Bom dia. {{DIA_SEMANA}} {{DATA}}.
 
-Peso em jejum: ___ kg
-Ontem, sono: ___ h
-Treino hoje: {{TIPO}} (esperado: {{ESPERADO}})
-Meta kcal: {{KCAL}} | P: {{P}}g | C: {{C}}g | G: {{G}}g
-
-[se sono ruim ontem]
-Sono curto ontem. Toca o treino leve hoje (50% da carga) ou substitui por caminhada 30 min?
-
-[se álcool acima da meta na semana]
-Álcool acima da meta {{N}} semanas seguidas. Bora zerar essa semana inteira?
-
-[se for início de fase ou semana]
-Mudança na rotina essa semana: {{NOTA}}
+1) Peso em jejum (kg): ___
+2) Treino hoje? [ ] sim  [ ] não
 ```
 
-## Dados que Hermes precisa ter em mãos
+Responde com: `100,8 sim` ou `100,8 não`. Só isso.
 
-- `estado.json` → peso_atual, tipo_dia, macros, sono_ultimo, alcool_semana
-- `config/macros.yaml` → macros do dia
-- `prompts-hermes/` → se houver nota especial
+## O que o Hermes faz com a resposta
 
-## Saída esperada do usuário
+- Grava em `metricas/peso.csv` (linha nova)
+- Grava em `metricas/treino.csv` se "sim"
+- Recalcula `estado.json` (média 7d, delta semanal, alertas)
+- Se for domingo (ou 7 dias desde o último check-in com treino), sugere `decisao/` de revisão semanal
+- **NÃO** pergunta mais nada
 
-- Confirmar/ajustar peso
-- Confirmar que vai treinar (ou indicar troca)
-- Sinalizar algo fora do padrão
+## Quando o Health Connect estiver configurado
 
-## Ações após resposta
+- Peso puxa automático às 5:35 via skill `health_connect`
+- Check-in vira só: "Treino hoje? [sim/não]"
 
-- Atualizar `metricas/peso.csv`
-- Se sono < 6h por 3+ dias seguidos → adicionar à `alertas` em `estado.json`
-- Se treino confirmado → nada extra; se cancelado → notificar à noite para compensação
+## Tom
+
+Direto. Sem positividade tóxica. Sem "você está arrasando". Sem "força!".
+
+## Pendências
+
+- [ ] Após Health Connect configurado, automatizar peso
+- [ ] Adaptar pra fds (Fernando respondeu que quer check-in só em dia de semana)

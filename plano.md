@@ -64,22 +64,36 @@ refeicao_livre_fase3_quinzena: 1   # almoço de domingo quinzenal
 kcal_piso_homens: 1500             # nunca abaixo disso na média semanal
 ```
 
-## Estrutura de refeições (modelo — ajustar por preferência)
+## Estrutura de refeições
 
-**Café (≈ 400 kcal, 35 g P)** — 3 ovos mexidos (ou 2 + 30 g whey) + 1 fatia pão integral + 1 fruta.
+**4 refeições/dia**, com lanche reforçado no fim da tarde (Fernando sente
+muita fome nesse horário; pular lanche = fome que sabota o jantar).
 
-**Almoço (≈ 550 kcal, 45 g P)** — prato brasileiro recalibrado:
+| Refeição | % kcal | Kcal (Fase 0 treino) | Proteína | Carbo | Gordura |
+|---|---|---|---|---|---|
+| Café | 22% | ~500 | 35 g | 50 g | 15 g |
+| Almoço | 32% | ~720 | 45 g | 110 g | 10 g |
+| Lanche | 16% | ~370 | 30 g | 25 g | 15 g |
+| Jantar | 30% | ~680 | 50 g | 55 g | 25 g |
+| **Total** | 100% | **~2.270** | **160 g** | **240 g** | **65 g** |
+
+**Café** — 2 ovos mexidos (ou 1 ovo + 30 g whey) + 1 pão integral + 1 fruta. Café com leite.
+
+**Almoço** — prato brasileiro tradicional, esposa cozinha:
 - 1 concha média de feijão
 - 3–4 colheres de arroz OU batata-doce/aipim
-- 150 g de proteína magra
+- 150–200 g de proteína (frango/porco/bovina, varia)
 - Salada à vontade com 1 fio de azeite
 - 1 fruta pequena de sobremesa
 
-**Lanche (≈ 250 kcal, 30 g P)** — whey + banana, OU iogurte grego + castanhas, OU pão integral + peito de peru.
+**Lanche (reforçado, não pular)** — 1 ovo cozido + 1 fruta + 5 castanhas, OU iogurte grego + granola, OU pão integral + queijo/peru.
 
-**Jantar (≈ 500 kcal, 50 g P)** — 200 g proteína + vegetais + 1 colher de azeite. Omelete, salmão, frango desfiado.
+**Jantar** — 200 g proteína + vegetais + 1 colher de azeite. Mais leve que almoço. Omelete, salmão, frango desfiado, sopa.
 
-**Total**: ~1.700 kcal, ~160–180 g proteína.
+### Cuidados da cozinha
+- Sódio controlado (cuidado cardíaco): usar ervas, alho, cebola no lugar de sal.
+- Gordura saturada baixa: preferir azeite e óleo vegetal; evitar banha/manteiga em exagero.
+- Fibra alta: feijão, aveia, salada — ajuda perfil lipídico pós-stent.
 
 > **Regra de ouro**: proteína primeiro, vegetal abundante, carbo em torno do treino, gordura como tempero.
 

@@ -1,15 +1,19 @@
 # Calorias e macros por fase × tipo de dia
-# Hermes consulta este arquivo para montar os macros_hoje do estado.json
-# Scripts de cardápio usam para gerar sugestões dentro da meta
-
-# Distribuição de carbo: 60% em volta do treino (pré+intra+pós)
-# Gordura: 0,8-1,0 g/kg
-# Proteína: piso de 1,6 g/kg de massa magra estimada (65 kg = 104 g), alvo 2,0 g/kg = 130 g
-# Mas mantemos 160-180 g para preservar saciedade e massa magra em déficit
+# Atualizado em 2026-06-07 após recálculo com dados reais do Fernando.
+#
+# Bio:
+#   - 48 anos, 173 cm, 101 kg, 65 kg massa magra
+#   - TMB 1.850 kcal (Mifflin-St Jeor)
+#   - TDEE 2.550 kcal
+#   - IAM set/2024, 3 stents, PA controlada, liberado cardio
+#
+# Estrutura de refeições: 4 (café, almoço, lanche, jantar).
+#   - 22% café, 32% almoço, 16% lanche, 30% jantar
+#   - lanche reforçado pra segurar até o jantar (Fernando sente muita fome no fim da tarde)
 
 fases:
   "0-reset":
-    descricao: "Manutenção — foco em tracking, sem déficit"
+    descricao: "Manutenção — foco em tracking, sem déficit. Cardio progressivo (não HIIT agressivo)."
     treino:
       kcal: 2300
       proteina_g: 160
@@ -80,13 +84,12 @@ piso:
   kcal_minimo_homens: 1500
   proteina_minima_g: 130
 
-# Distribuição das refeições (% das kcal totais)
+# Distribuição das 4 refeições (% das kcal totais)
 distribuicao_refeicoes:
   cafe: 0.22
   almoco: 0.32
-  lanche: 0.14
-  jantar: 0.28
-  extras: 0.04
+  lanche: 0.16
+  jantar: 0.30
 
 # Distribuição de macros por refeição
 distribuicao_macros:
@@ -99,10 +102,10 @@ distribuicao_macros:
     carbo_pct: 0.45
     gordura_pct: 0.15
   lanche:
-    proteina_pct: 0.18
+    proteina_pct: 0.20
     carbo_pct: 0.10
     gordura_pct: 0.20
   jantar:
-    proteina_pct: 0.32
+    proteina_pct: 0.30
     carbo_pct: 0.25
     gordura_pct: 0.50

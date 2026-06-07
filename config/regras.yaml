@@ -51,14 +51,19 @@ sono:
   acao_se_pausar: "manutenção por 7 dias, depois retomar déficit"
 
 # --- Álcool ---
+# Atualizado em 2026-06-07 conforme combinado com Fernando:
+# Fase 0 não tem meta rígida. Reportar SEMPRE que consumir.
+# Hermes registra e mostra tendência, mas não pressiona zerar.
 alcool:
-  meta_fase_0: 0
+  politica: "reportar sempre"
+  meta_fase_0: "reportar sempre; meta desejável = 0"
   meta_fase_1: 0
   meta_fase_2: 0
   meta_fase_3: 2                          # doses/sem
   meta_fase_4: 3                          # doses/sem, com moderação
-  excesso_consecutivo_semanas_para_intervir: 2
-  acao_se_excesso: "zerar 1 semana inteira + conversa de alinhamento"
+  limite_para_alerta: 7                   # >7 doses/sem → alerta amarelo
+  limite_para_conversa: 14                # >14 doses/sem → conversa de alinhamento
+  acao_se_conversa: "abrir decisao/ com tendência e contexto"
 
 # --- Treino ---
 treino:
@@ -94,6 +99,17 @@ aderencia:
   janela_kcal_aceitavel_pct: 10          # ±10% da meta conta como aderente
   dias_aderentes_minimos_semana: 5
   falha_2_semanas_seguidas_acao: "revisar cardápio e timing das refeições"
+
+# --- Pressão arterial ---
+# Cuidado cardíaco: Fernando tem PA controlada + 3 stents.
+# Aferição semanal mínima. Comunicar cardiologista se PA subir sustentado.
+pa:
+  meta_sistolica_max: 130
+  meta_diastolica_max: 85
+  alerta_se_sistolica_above: 140
+  alerta_se_diastolica_above: 90
+  janela_avaliacao_dias: 7
+  acao_se_alerta: "registrar em decisoes/, considerar ajuste sódio/stress; comunicar cardio se persistir"
 
 # --- Macros ---
 macros:

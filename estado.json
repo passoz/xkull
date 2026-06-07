@@ -83,5 +83,11 @@
       "data_prevista": "2027-04-15",
       "fase": "3-recorte-b"
     }
-  ]
+  ],
+  "pa": {
+    "ultima_sistolica": null,
+    "ultima_diastolica": null,
+    "media_sistolica": null,
+    "media_diastolica": null
+  }
 }
