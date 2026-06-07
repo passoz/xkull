@@ -1,5 +1,13 @@
 # Regras de decisão que o Hermes aplica automaticamente
 # Thresholds para os ajustes do plano em tempo real
+#
+# IMPORTANTE (2026-06-07): estas regras são um PONTO DE PARTIDA, não grades.
+# Fernando quer flexibilidade para ajustar à medida que avançamos e ele
+# lembrar de coisas que esqueceu. Regras podem ser revisadas a qualquer
+# momento, e cada mudança fica registrada em decisoes/ como histórico
+# auditável. Quando o usuário lembrar de algo novo, Hermes pergunta:
+# "isso muda alguma regra aqui?" e, se sim, anexa em decisoes/ e atualiza.
+
 
 # --- Peso e tendência ---
 peso:
