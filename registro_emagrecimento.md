@@ -88,3 +88,34 @@ Plano completo em `plano.md`. Configuração em `config/`. Tracking em `metricas
 - Mês 1 (até 07/07/2026): sem medicação. Avaliar resultado das Fases 0 e 1.
 - Mês 2: revisar com médico sobre injetável (tirzepatida ou semaglutida) se fome inviabilizar o plano autônomo.
 - Se aprovado, plano não muda — medicação entra como amplificador.
+
+
+---
+
+## Atualização 2026-06-07 — histórico médico crítico
+
+Esta seção é imutável a partir de 2026-06-07. Substitui premissas anteriores
+que diziam "homem, 45 anos, sem comorbidades, sem medicação".
+
+### Eventos médicos relevantes
+
+- **2024-09**: infarto agudo do miocárdio. Tratamento: implante de 3 stents.
+- Em uso contínuo de medicação para a condição (lista exata a ser preenchida).
+- Pressão alta controlada.
+- **Liberado pelo cardiologista** para prática de exercício físico e dieta.
+
+### Impacto no plano
+
+- A idade de cálculo passou de **45 → 48 anos**.
+- TMB recalculado para ~1.850 kcal (Mifflin-St Jeor, peso 101 kg).
+- O plano **não pode** operar como se a pessoa fosse clinicamente "limpa".
+- Qualquer protocolo de cardio deve ser progressivo e monitorado.
+- Dieta precisa controlar sódio e gordura saturada, em linha com a condição.
+- Adicionar medição de PA semanal em `metricas/pa.csv` (a criar).
+
+### Pendências imediatas
+
+- Lista exata de medicação (coletar do Fernando).
+- Nome do cardiologista e data da liberação.
+- Data do último teste de esforço (se houve).
+- Avaliação com nutricionista para meta de sódio e perfil lipídico.

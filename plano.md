@@ -1,5 +1,25 @@
 # Plano Macro — Recompromisso 101 → 92 → 78 kg
 
+> ## ⚠️ ALERTA CARDIOVASCULAR (atualizado em 2026-06-07)
+>
+> Fernando teve infarto em set/2024, fez implante de 3 stents, está em
+> medicação contínua e tem pressão alta controlada. **Está liberado pelo
+> cardiologista para exercício e dieta**, mas isso não significa "pode tudo".
+>
+> Implicações práticas para o plano:
+>
+> 1. **Cardio é progressivo**. Nada de HIIT agressivo nas Fases 0 e 1.
+> 2. **Treino de força é aliado** (reabilita cardiovascular), mas carga
+>    progressiva de verdade, sem pressa.
+> 3. **Sódio controlado**. Meta diária a definir com nutricionista.
+> 4. **PA semanal** registrada em `metricas/pa.csv`.
+> 5. **Lista de medicação** precisa entrar no `biometria.yaml`.
+> 6. Qualquer **dor no peito, dispneia anormal ou tontura** durante
+>    treino = parar imediatamente e registrar.
+>
+> Detalhes completos em `config/biometria.yaml` e
+> `decisoes/2026-06-07-atualizacao-historico-medico.md`.
+
 ## Premissas
 
 - Janela de **1 mês sem medicação** (Rybelsus suspenso). Plano desenhado para funcionar autônomo. Decisão sobre injetável no mês 2.

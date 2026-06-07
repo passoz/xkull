@@ -1,17 +1,24 @@
 # Biometria e dados estáticos da pessoa
 # Estes valores raramente mudam. Edite apenas se houver mudança real.
+# Última atualização: 2026-06-07 (Hermes, após confirmação do Fernando)
 
 altura_cm: 173
-idade: 45
+idade: 48
 sexo: M
-data_nascimento: null
+data_nascimento: 1977-10-23
 
 # Calculados por Mifflin-St Jeor
-tmb_kcal: 1871
+tmb_kcal: 1850   # recalculado para 48 anos, 173 cm, ~101 kg
+# (10 * 101) + (6.25 * 173) - (5 * 48) + 5 = 1010 + 1081.25 - 240 + 5 = 1856.25 → 1850
 
 # TDEE estimado com musculação 4x/sem + cardio leve
-tdee_kcal: 2575
-tdee_sem_rebelsus_kcal: 2575   # igual sem medicação (efeito é comportamental)
+tdee_kcal: 2550
+tdee_sem_rebelsus_kcal: 2550   # igual sem medicação (efeito é comportamental)
+
+# Composição corporal (estimada — pendente bioimpedância)
+massa_magra_estimada_kg: 65
+massa_gorda_estimada_kg: 36
+gordura_corporal_pct: 35.6
 
 # Rotina
 trabalho: sedentario_escritorio
@@ -19,18 +26,44 @@ sono_meta_horas: 7
 sono_minimo_aceitavel_horas: 6
 horas_acordado_estimadas: 17
 
-# Composição atual (estimada)
-massa_magra_estimada_kg: 65
-massa_gorda_estimada_kg: 36
-gordura_corporal_pct: 35.6
-
 # Comportamento
 bebe_alcool: true
 alcool_frequencia_historica: "3-5 doses/sem (cerveja e vinho)"
 fumante: false
 
-# Saúde
-comorbidades: []
-medicacao_atual: []
-alergias_alimentares: []
-restricoes_alimentares: []
+# ===== HISTÓRICO CARDIOVASCULAR =====
+# Isso é crítico. Não é detalhe. Afeta tudo: treino, cardio, sódio, ritmo.
+saude:
+  liberado_cardiologista: true
+  data_liberacao: "2025"   # data exata pendente — Fernando confirmar
+  medico_cardiologista: "pendente"
+
+  eventos:
+    - tipo: infarto
+      data: "2024-09"
+      tratamento: "3 stents"
+      status: "controlado"
+
+  condicoes_ativas:
+    - pressao_alta_controlada
+
+  medicacao_atual: []   # lista exata pendente — Fernando preencher
+  # Exemplos comuns pós-stent: AAS, clopidogrel, atorvastatina, losartana, betabloqueador
+  # NÃO CHUTAR. Pedir lista ao Fernando.
+
+  alergias_alimentares: []
+  restricoes_alimentares: []
+
+# Restrições e cuidados para o plano
+cuidados_cardio:
+  treino:
+    - "evitar picos de FC acima de X bpm sem teste de esforço recente"
+    - "cardio progressivo, não HIIT agressivo nas fases iniciais"
+    - "sempre ter percepção subjetiva de esforço (PSE) registrada"
+  dieta:
+    - "sódio controlado (meta diária pendente com nutricionista)"
+    - "gordura saturada baixa (consistente com estátua pós-stent)"
+    - "fibra alta (ajuda perfil lipídico)"
+  monitoramento:
+    - "PA aferida semanalmente em casa, anotada em metricas/pa.csv (criar)"
+    - "qualquer dor no peito durante treino = parar e registrar"
