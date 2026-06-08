@@ -4,3 +4,5 @@ data,refeicao,alimento,porcao,kcal,proteina_g,carbo_g,gordura_g
 2026-06-08,cafe,pao_de_queijo_pequeno,2 unid,250,6,20,16
 2026-06-08,almoco,sopa_macarrao_padre_nosso_calabresa,1 porção,420,15,44,13
 2026-06-08,almoco,carne_mista_porco_boi_azeite_cebola,2 porções,740,60,8,52
+2026-06-08,lanche,banana_prata,1 unid,40,0.5,10,0
+2026-06-08,lanche,sanduiche_pao_forma_queijo_branco_peru_cottage,1 unid,250,18,25,9
