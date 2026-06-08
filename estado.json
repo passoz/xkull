@@ -42,11 +42,11 @@
   "macros_hoje": {
     "data": "2026-06-08",
     "tipo_dia": "treino",
-    "kcal": 2250,
+    "kcal": 1800,
     "kcal_consumido": 1415,
     "proteina_g": 160,
-    "gordura_g": 70,
-    "carbo_g": 230
+    "gordura_g": 60,
+    "carbo_g": 170
   },
   "treino": {
     "meta_semanal": 3,

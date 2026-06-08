@@ -13,17 +13,17 @@
 
 fases:
   "0-reset":
-    descricao: "Manutenção — foco em tracking, sem déficit. Cardio progressivo (não HIIT agressivo)."
+    descricao: "Reset — max 1800 kcal/dia (baseado na última dieta do Fernando, que funcionou)"
     treino:
-      kcal: 2300
+      kcal: 1800
       proteina_g: 160
-      carbo_g: 250
-      gordura_g: 75
+      carbo_g: 170
+      gordura_g: 60
     descanso:
-      kcal: 2200
-      proteina_g: 160
-      carbo_g: 230
-      gordura_g: 70
+      kcal: 1700
+      proteina_g: 150
+      carbo_g: 155
+      gordura_g: 55
 
   "1-recorte-a":
     descricao: "Déficit agressivo ~750 kcal"
