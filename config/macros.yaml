@@ -1,111 +1,126 @@
 # Calorias e macros por fase × tipo de dia
-# Atualizado em 2026-06-07 após recálculo com dados reais do Fernando.
+# Atualizado em 2026-06-08 após revisão crítica do plano.
 #
-# Bio:
-#   - 48 anos, 173 cm, 101 kg, 65 kg massa magra
-#   - TMB 1.850 kcal (Mifflin-St Jeor)
-#   - TDEE 2.550 kcal
+# Bio operacional:
+#   - 48 anos, 173 cm, ~100 kg
+#   - TMB estimada: 1.850 kcal
+#   - TDEE estimado: 2.400–2.550 kcal (validar por evolução real)
 #   - IAM set/2024, 3 stents, PA controlada, liberado cardio
 #
-# Estrutura de refeições: 4 (café, almoço, lanche, jantar).
-#   - 22% café, 32% almoço, 16% lanche, 30% jantar
-#   - lanche reforçado pra segurar até o jantar (Fernando sente muita fome no fim da tarde)
+# Nota importante:
+#   - 1.800 kcal NÃO é manutenção; é corte agressivo/controlado.
+#   - Proteína deve operar por faixa: mínimo, alvo, excelente.
+#   - As calorias por macro abaixo foram ajustadas para fechar matematicamente.
 
 fases:
   "0-reset":
-    descricao: "Reset — max 1800 kcal/dia (baseado na última dieta do Fernando, que funcionou)"
+    descricao: "Corte inicial controlado — valida aderência sem medidas extremas"
     treino:
       kcal: 1800
-      proteina_g: 160
-      carbo_g: 170
+      proteina_g: 150
+      carbo_g: 165
       gordura_g: 60
     descanso:
       kcal: 1700
-      proteina_g: 150
-      carbo_g: 155
-      gordura_g: 55
+      proteina_g: 145
+      carbo_g: 145
+      gordura_g: 60
 
   "1-recorte-a":
-    descricao: "Déficit agressivo ~750 kcal"
+    descricao: "Corte sustentado — perseguir 92 kg com média 0,5–0,8 kg/sem"
     treino:
       kcal: 1800
-      proteina_g: 180
+      proteina_g: 150
       carbo_g: 165
       gordura_g: 60
     descanso:
       kcal: 1650
-      proteina_g: 170
+      proteina_g: 145
       carbo_g: 135
-      gordura_g: 55
+      gordura_g: 59
 
   "2-consolidacao":
-    descricao: "Reverse diet — sobe 100 kcal/sem até TDEE"
+    descricao: "Consolidação curta — reduzir fadiga e estabilizar antes do segundo corte"
     semana_1:
-      treino:  { kcal: 1900, proteina_g: 175, carbo_g: 180, gordura_g: 62 }
-      descanso: { kcal: 1800, proteina_g: 170, carbo_g: 165, gordura_g: 60 }
+      treino:  { kcal: 1850, proteina_g: 150, carbo_g: 175, gordura_g: 61 }
+      descanso: { kcal: 1750, proteina_g: 145, carbo_g: 155, gordura_g: 61 }
     semana_2:
-      treino:  { kcal: 2100, proteina_g: 170, carbo_g: 200, gordura_g: 70 }
-      descanso: { kcal: 2000, proteina_g: 170, carbo_g: 180, gordura_g: 65 }
+      treino:  { kcal: 1950, proteina_g: 150, carbo_g: 195, gordura_g: 63 }
+      descanso: { kcal: 1850, proteina_g: 145, carbo_g: 175, gordura_g: 63 }
     semana_3:
-      treino:  { kcal: 2300, proteina_g: 165, carbo_g: 230, gordura_g: 75 }
-      descanso: { kcal: 2200, proteina_g: 165, carbo_g: 215, gordura_g: 72 }
+      treino:  { kcal: 2050, proteina_g: 150, carbo_g: 215, gordura_g: 66 }
+      descanso: { kcal: 1950, proteina_g: 145, carbo_g: 195, gordura_g: 66 }
     semana_4:
-      treino:  { kcal: 2400, proteina_g: 160, carbo_g: 250, gordura_g: 75 }
-      descanso: { kcal: 2300, proteina_g: 160, carbo_g: 235, gordura_g: 73 }
+      treino:  { kcal: 2100, proteina_g: 150, carbo_g: 225, gordura_g: 67 }
+      descanso: { kcal: 2000, proteina_g: 145, carbo_g: 205, gordura_g: 67 }
 
   "3-recorte-b":
-    descricao: "Déficit moderado ~500 kcal"
+    descricao: "Segundo corte — perseguir 78 kg até 31/12 se o ritmo permitir"
     treino:
-      kcal: 1950
-      proteina_g: 170
+      kcal: 1850
+      proteina_g: 150
       carbo_g: 175
-      gordura_g: 65
+      gordura_g: 61
     descanso:
-      kcal: 1800
-      proteina_g: 165
+      kcal: 1750
+      proteina_g: 145
       carbo_g: 155
-      gordura_g: 60
+      gordura_g: 61
 
   "4-manutencao":
-    descricao: "TDEE"
+    descricao: "Manutenção — definir por média real após atingir meta"
     treino:
-      kcal: 2500
-      proteina_g: 160
-      carbo_g: 280
+      kcal: 2300
+      proteina_g: 145
+      carbo_g: 255
       gordura_g: 75
     descanso:
-      kcal: 2400
-      proteina_g: 160
-      carbo_g: 260
+      kcal: 2200
+      proteina_g: 145
+      carbo_g: 230
       gordura_g: 75
 
-# Piso de segurança
+# Piso e faixas de segurança
 piso:
   kcal_minimo_homens: 1500
   proteina_minima_g: 130
+  carbo_minimo_g: 80
+  gordura_minima_pct_kcal: 20
+
+proteina:
+  minimo_aceitavel_g: 130
+  alvo_realista_g: 145
+  excelente_g: 160
 
 # Distribuição das 4 refeições (% das kcal totais)
 distribuicao_refeicoes:
-  cafe: 0.22
-  almoco: 0.32
-  lanche: 0.16
-  jantar: 0.30
+  cafe: 0.20
+  almoco: 0.38
+  lanche: 0.14
+  jantar: 0.28
 
-# Distribuição de macros por refeição
+# Distribuição de macros por refeição — guia, não trava rígida
 distribuicao_macros:
   cafe:
-    proteina_pct: 0.22
+    proteina_pct: 0.20
     carbo_pct: 0.20
-    gordura_pct: 0.15
+    gordura_pct: 0.20
   almoco:
-    proteina_pct: 0.28
+    proteina_pct: 0.35
     carbo_pct: 0.45
-    gordura_pct: 0.15
+    gordura_pct: 0.30
   lanche:
     proteina_pct: 0.20
     carbo_pct: 0.10
-    gordura_pct: 0.20
+    gordura_pct: 0.15
   jantar:
-    proteina_pct: 0.30
+    proteina_pct: 0.25
     carbo_pct: 0.25
-    gordura_pct: 0.50
+    gordura_pct: 0.35
+
+meta_ambiciosa:
+  peso_final_kg: 78
+  data: "2026-12-31"
+  ritmo_necessario_kg_sem: 0.75
+  classificacao: "possivel_no_papel_mas_agressiva"
+  politica: "perseguir sem medidas extremas; revisar por média móvel"

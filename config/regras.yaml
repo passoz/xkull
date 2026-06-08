@@ -85,13 +85,16 @@ refeicao_livre:
   limite_kcal: 1500
   sem_compensar_dia_seguinte: true
 
-# --- Day-reset (botão de emergência) ---
+# --- Reset conservador (sem jejum automático) ---
+# Regain isolado quase sempre é retenção, sódio, intestino, álcool ou treino.
+# Com histórico cardiovascular e medicação contínua, jejum 24h não deve ser gatilho automático.
 day_reset:
-  trigger: "regain ≥ 1 kg em 2 semanas"
+  trigger: "regain ≥ 1 kg em 2 semanas na média móvel"
   protocolo:
-    - "jejum 24h (água, café preto, chá)"
-    - "dia seguinte: manutenção (TDEE)"
-    - "volta ao plano original"
+    - "revisar aderência, sódio, álcool, sono, intestino e treino antes de qualquer ajuste"
+    - "fazer 1 dia simples dentro da meta calórica (1700–1800 kcal), proteína alta e sódio moderado"
+    - "cardio leve opcional; sem punição e sem compensação agressiva"
+    - "se persistir por 2 semanas com aderência boa: cortar 100–150 kcal OU adicionar 1 cardio leve"
     - "log em decisoes/"
 
 # --- Aderência ---

@@ -44,9 +44,9 @@
     "tipo_dia": "treino",
     "kcal": 1800,
     "kcal_consumido": 1415,
-    "proteina_g": 160,
+    "proteina_g": 150,
     "gordura_g": 60,
-    "carbo_g": 170
+    "carbo_g": 165
   },
   "treino": {
     "meta_semanal": 3,

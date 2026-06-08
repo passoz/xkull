@@ -1,159 +1,195 @@
-# Plano Macro — Recompromisso 101 → 92 → 78 kg
+# Plano Macro — Recompromisso 99,95 → 92 → 78 kg
 
-> ## ⚠️ ALERTA CARDIOVASCULAR (atualizado em 2026-06-07)
+> ## ⚠️ ALERTA CARDIOVASCULAR
 >
-> Fernando teve infarto em set/2024, fez implante de 3 stents, está em
-> medicação contínua e tem pressão alta controlada. **Está liberado pelo
-> cardiologista para exercício e dieta**, mas isso não significa "pode tudo".
+> Fernando tem 48 anos, teve IAM em set/2024, fez implante de 3 stents,
+> está em medicação contínua e tem PA controlada. Foi liberado pelo cardiologista
+> para exercício e dieta, mas isso não significa "pode tudo".
 >
-> Implicações práticas para o plano:
+> Implicações práticas:
 >
-> 1. **Cardio é progressivo**. Nada de HIIT agressivo nas Fases 0 e 1.
-> 2. **Treino de força é aliado** (reabilita cardiovascular), mas carga
->    progressiva de verdade, sem pressa.
-> 3. **Sódio controlado**. Meta diária a definir com nutricionista.
-> 4. **PA semanal** registrada em `metricas/pa.csv`.
-> 5. **Lista de medicação** precisa entrar no `biometria.yaml`.
-> 6. Qualquer **dor no peito, dispneia anormal ou tontura** durante
->    treino = parar imediatamente e registrar.
->
-> Detalhes completos em `config/biometria.yaml` e
-> `decisoes/2026-06-07-atualizacao-historico-medico.md`.
+> 1. Cardio progressivo. Nada de HIIT agressivo no início.
+> 2. Musculação é base, com progressão conservadora.
+> 3. PA semanal registrada em `metricas/pa.csv`.
+> 4. Lista de medicação ainda precisa ser preenchida em `config/biometria.yaml`.
+> 5. Dor no peito, dispneia anormal, tontura ou mal-estar no treino = parar e registrar.
 
-## Premissas
+## Veredito do plano
 
-- Janela de **1 mês sem medicação** (Rybelsus suspenso). Plano desenhado para funcionar autônomo. Decisão sobre injetável no mês 2.
-- Sem restrições alimentares.
-- Biometria: homem, 173 cm, 45 anos, trabalho sedentário, sono 6–7 h.
-- Álcool: 3–5 doses/sem no histórico → precisa zerar nas Fases 0 e 1.
+O plano é factível, mas **não é leve**. A meta de 78 kg até 31/12/2026 é possível no papel,
+mas exige média de aproximadamente **0,75 kg/semana** a partir de 99,95 kg.
 
-## Estratégia em 4 fases
+- Data-base: 2026-06-08
+- Peso atual: 99,95 kg
+- Meta final ambiciosa: 78 kg em 2026-12-31
+- Tempo disponível: 206 dias / 29,4 semanas
+- Perda necessária: 21,95 kg
+- Ritmo necessário: ~0,75 kg/semana
+- Déficit médio necessário: ~820 kcal/dia
 
-| Fase | Semanas | Peso alvo | Déficit (média) | kcal/dia | Álcool | Treino |
-|---|---|---|---|---|---|---|
-| **0. Reset** | 2 | 101 → 99 | 0 (manutenção) | ~2.250 | 0 | 3x musculação + 2x caminhada |
-| **1. Recorte A** | 14–16 | 99 → 92 | –750 kcal | ~1.740 | 0 | 4x musculação + 2x cardio |
-| **2. Consolidação** | 3–4 | 92 (estável) | +100 kcal/sem até TDEE | 1.900 → 2.300 | 0 | 4x musculação |
-| **3. Recorte B** | 20–24 | 92 → 78 | –500 kcal | ~1.890 | 1–2 doses/sem | 4x musculação + 2x cardio |
-| **4. Manutenção** | contínuo | 78 ± 2 | TDEE | ~2.400 | livre c/ moderação | 4x/sem |
+**Classificação:** ambiciosa, possível com alta aderência, mas não garantida. A meta operacional é perseguir 78 kg até 31/12 sem sacrificar segurança, treino, sono ou adesão. Se o ritmo cair, a meta correta vira chegar o mais perto possível, não forçar medidas extremas.
 
-**Cronograma**: ~10–11 meses até 78 kg. 92 kg em ~4,5 meses.
+## Premissas atuais
 
-## Princípios inegociáveis
+- Sem restrições alimentares formais.
+- Refeições reais brasileiras: arroz, feijão, carne, frango, porco, salada, sopa, pão.
+- Esposa cozinha; o plano precisa caber na comida de casa.
+- Estrutura de 4 refeições: café, almoço, lanche e jantar.
+- Álcool: **reportar sempre**. Meta desejável é zero, mas a regra é registrar, não esconder.
+- Rybelsus suspenso; decisão sobre medicação/injetável só com médico.
+- Check-in mínimo: peso em jejum + sim/não treino.
 
-1. **Proteína primeiro** — 1,6–2,0 g/kg de massa magra estimada (~160–180 g/dia).
-2. **Álcool = moeda de troca** — zero na Fase 0 e 1; máximo 2 doses/sem na Fase 3+.
-3. **Treino 4x/semana é o piso** (Fases 1+) — musculação não é negociável.
-4. **Média móvel de 7 dias**, não o peso do dia.
-5. **Reverse diet obrigatório** entre fases de corte.
-6. **Plato de 2 semanas = ajuste automático**.
+## Estratégia em fases
 
-## Regras de decisão (Hermes aplica automaticamente)
+| Fase | Período | Peso alvo | kcal/dia | Treino | Critério |
+|---|---:|---:|---:|---|---|
+| **0. Corte inicial controlado** | 2 semanas | 99,95 → 98,5/99 | 1.700–1.800 | 3x musculação | validar aderência |
+| **1. Corte sustentado** | 12–16 semanas | 99 → 92 | 1.650–1.850 | 3–4x musculação + cardio leve | média 0,5–0,8 kg/sem |
+| **2. Consolidação curta** | 2–4 semanas | 92 estável | 1.850–2.100 | manter força | reduzir fadiga |
+| **3. Segundo corte** | até 31/12 | 92 → 78 | 1.750–1.950 | 4x musculação + cardio leve | perseguir meta final |
+| **4. Manutenção** | após meta | 78 ± 2 | a definir | 3–4x/sem | estabilizar |
 
-```yaml
-queda_peso_semanal_minima: 0.5     # kg/sem na média 7d
-plate_2_semanas: 0.3               # abaixo disso por 2 semanas → ajusta
-corte_kcal_ajuste: 150             # kcal a cortar se plato
-cardio_extra_se_plato: 1           # sessão de cardio a mais
-fome_alta_threshold: 7             # em escala 0-10
-fome_alta_duracao: 3               # dias seguidos → ajusta macros
-sono_minimo_horas: 6
-sono_ruim_duracao: 5               # dias → pausa déficit 1 semana
-alcool_meta_padrao: 0              # Fases 0 e 1
-refeicao_livre_fase3_quinzena: 1   # almoço de domingo quinzenal
-kcal_piso_homens: 1500             # nunca abaixo disso na média semanal
-```
+## Meta 78 kg até 31/12 — análise honesta
 
-## Estrutura de refeições
+É possível se três coisas acontecerem ao mesmo tempo:
 
-**4 refeições/dia**, com lanche reforçado no fim da tarde (Fernando sente
-muita fome nesse horário; pular lanche = fome que sabota o jantar).
+1. **Aderência calórica média alta**: a semana precisa fechar perto da meta, não apenas alguns dias.
+2. **Treino consistente**: musculação preserva massa magra; cardio leve ajuda no déficit sem explodir fome.
+3. **Sono/fome sob controle**: sem isso, a dieta quebra antes de dezembro.
 
-| Refeição | % kcal | Kcal (Fase 0 treino) | Proteína | Carbo | Gordura |
-|---|---|---|---|---|---|
-| Café | 22% | ~500 | 35 g | 50 g | 15 g |
-| Almoço | 32% | ~720 | 45 g | 110 g | 10 g |
-| Lanche | 16% | ~370 | 30 g | 25 g | 15 g |
-| Jantar | 30% | ~680 | 50 g | 55 g | 25 g |
-| **Total** | 100% | **~2.270** | **160 g** | **240 g** | **65 g** |
+Cenários até 31/12:
 
-**Café** — 2 ovos mexidos (ou 1 ovo + 30 g whey) + 1 pão integral + 1 fruta. Café com leite.
+| Ritmo médio | Peso provável em 31/12 |
+|---:|---:|
+| 0,50 kg/sem | ~85,2 kg |
+| 0,65 kg/sem | ~80,8 kg |
+| **0,75 kg/sem** | **~77,9 kg** |
+| 0,85 kg/sem | ~74,9 kg |
 
-**Almoço** — prato brasileiro tradicional, esposa cozinha:
-- 1 concha média de feijão
-- 3–4 colheres de arroz OU batata-doce/aipim
-- 150–200 g de proteína (frango/porco/bovina, varia)
-- Salada à vontade com 1 fio de azeite
-- 1 fruta pequena de sobremesa
+Conclusão: **78 kg exige ritmo de corte agressivo, mas dentro do plausível**. Não vou tratar como promessa; vou tratar como meta ambiciosa com checkpoints.
 
-**Lanche (reforçado, não pular)** — 1 ovo cozido + 1 fruta + 5 castanhas, OU iogurte grego + granola, OU pão integral + queijo/peru.
+## Metas práticas de calorias
 
-**Jantar** — 200 g proteína + vegetais + 1 colher de azeite. Mais leve que almoço. Omelete, salmão, frango desfiado, sopa.
+- Dia de treino: **1.800 kcal**
+- Dia de descanso: **1.700 kcal**
+- Faixa aceitável: ±10% na média semanal
+- Piso operacional: **1.500 kcal/dia** na média semanal, sem jejum automático
 
-### Cuidados da cozinha
-- Sódio controlado (cuidado cardíaco): usar ervas, alho, cebola no lugar de sal.
-- Gordura saturada baixa: preferir azeite e óleo vegetal; evitar banha/manteiga em exagero.
-- Fibra alta: feijão, aveia, salada — ajuda perfil lipídico pós-stent.
+Distribuição sugerida em dia de 1.800 kcal:
 
-> **Regra de ouro**: proteína primeiro, vegetal abundante, carbo em torno do treino, gordura como tempero.
+| Refeição | kcal alvo |
+|---|---:|
+| Café | 300–400 |
+| Almoço | 600–700 |
+| Lanche | 200–300 |
+| Jantar | 400–600 |
 
-## Estratégias anti-fome (substitutas do Rybelsus)
+Se o almoço passar de 1.000 kcal, ainda pode caber no dia, mas a janta precisa ser leve.
 
-1. Volume de vegetais low-cal (brócolis, espinafre, abobrinha, pepino).
-2. Fibra — meta 30 g/dia (aveia, feijão, chia, linhaça).
-3. Termogênicos naturais — café preto pré-treino, gengibre, pimenta.
-4. Saciogênicos — whey isolado, ovo, batata-doce, aveia, frango desfiado.
-5. Janela 12 h (opcional) — 12:00–20:00 ou 13:00–19:00.
-6. Regra dos 20 min — sede, fome ou tédio, espera 20 min bebendo água/chá.
-7. Substitutos de doce — fruta congelada, cacau 70%, iogurte natural com canela.
+## Proteína e macros
 
-## Treino — Fase 1 (4x/semana)
+Não transformar proteína em obsessão. Faixas:
 
-| Dia | Sessão | Tempo |
-|---|---|---|
-| Segunda | Full Body A | 50 min |
-| Terça | Cardio LISS (caminhada/bike) | 30–40 min |
-| Quarta | Full Body B | 50 min |
-| Quinta | Descanso ativo (caminhada leve) | 20 min |
-| Sexta | Full Body A | 50 min |
-| Sábado | Cardio LISS + mobilidade | 40 min |
-| Domingo | Descanso total | — |
+- Mínimo aceitável: **130 g/dia**
+- Alvo realista: **145–150 g/dia**
+- Excelente: **160 g/dia**
 
-**Full Body A**: agachamento, supino, remada curvada, desenvolvimento, abdominal.
-**Full Body B**: terra romeno, puxada frontal, leg press, elevação lateral, prancha.
+Macros-base em dia de treino:
 
-Progressão: +2,5 kg por semana em cada composto se completar todas as séries com 2 reps na reserva.
+- Proteína: 150 g
+- Carboidrato: 165 g
+- Gordura: 60 g
+- Total aproximado: 1.800 kcal
 
-## Sinais de alerta e ajustes
+Macros-base em descanso:
 
-| Sinal | Ação |
+- Proteína: 145 g
+- Carboidrato: 145 g
+- Gordura: 60 g
+- Total aproximado: 1.700 kcal
+
+## Treino — início realista
+
+A base agora é 3x/semana musculação. O treino real já começou como divisão por grupos musculares, então o plano deve refletir isso.
+
+Sugestão inicial:
+
+| Dia | Sessão |
 |---|---|
-| Peso parado por 2 semanas | –150 kcal OU +1 cardio |
-| Fome > 7/10 por 3+ dias | +200 kcal de carbo no treino, manter proteína |
-| Sono < 6 h por 5+ dias | Pausa déficit, manutenção 1 semana |
-| Humor/ansiedade piorando | +gordura (35%), –cardio 1 semana |
-| Refeição livre não programada | Anotar, não compensar no dia seguinte |
-| 2 semanas de regain | Day-reset: jejum 24h + 2 dias manutenção |
+| A | Peito + tríceps + esteira leve |
+| B | Costas + bíceps + esteira leve |
+| C | Pernas + ombro + core |
 
-## Marcos e celebração
+Cardio:
 
-- **5 kg perdidos** (~semana 6): roupa do guarda-roupa que não servia.
-- **92 kg**: foto, registro, **iniciar consolidação** (não acelerar).
-- **85 kg**: segunda "roupa de meta".
-- **78 kg**: foto profissional, **manutenção vitalícia** com pesagem semanal indefinida.
+- Caminhada/esteira/bike leve: 20–40 min
+- Intensidade: confortável/moderada
+- Evitar por enquanto: HIIT agressivo, jump pesado, cross intenso, spinning competitivo
 
-## Sobre o Rybelsus / injetável
+## Métricas obrigatórias
 
-| Opção | Quando | Cuidado |
-|---|---|---|
-| Não retomar | Se em 2–3 semanas da Fase 0 a fome estiver sob controle | Mais disciplina inicial |
-| Retomar (injetável) | Se fome continuar sabotando após 30 dias | Sair dele só com plano de tapering de calorias |
+- Peso em jejum: idealmente diário, mas mínimo no check-in.
+- Cintura: 1x/semana, sempre no mesmo ponto.
+- PA: 1x/semana.
+- Treino: sim/não + descrição breve.
+- Refeições: registrar quando reportadas.
+- Álcool: reportar sempre que consumir.
 
-Recomendação: começar **só com o comportamental**. Se em 30 dias a fome estiver inviável, retomar com o médico e seguir.
+## Regras de ajuste
 
-## Critério para avançar de fase
+1. Peso parado por 2 semanas na média de 7 dias: revisar aderência antes de cortar kcal.
+2. Se aderência estiver boa e peso parado: cortar 100–150 kcal **ou** adicionar 1 cardio leve.
+3. Fome > 7/10 por 3 dias: aumentar volume/fibra/proteína antes de subir kcal.
+4. Sono < 6 h por 5 dias: pausar agressividade do déficit por 1 semana.
+5. Regain isolado não gera punição. Primeiro verificar retenção, sódio, treino, intestino e álcool.
+6. Sem jejum 24h automático.
 
-- **Fase 0 → Fase 1**: completou 2 semanas, treino 6/6 sessões, álcool 0, sono ≥ 6,5 h média.
-- **Fase 1 → Fase 2**: atingiu 92 kg E está há pelo menos 2 semanas estáveis na média móvel.
-- **Fase 2 → Fase 3**: reverse diet completo, peso estabilizado 7 dias seguidos.
-- **Fase 3 → Fase 4**: atingiu 78 kg, reverse diet feito, força mantida ou aumentada.
+## Cardápio-base
+
+**Café**: opção mais leve que pão + queijo todo dia. Ex.: ovo, fruta, café; ou pão com proteína; ou iogurte/whey.
+
+**Almoço**: prato brasileiro normal, controlando porções:
+- 1 concha de feijão
+- 2–4 colheres de arroz ou carbo equivalente
+- 150–200 g de proteína
+- salada/legumes
+- azeite medido, não livre
+
+**Lanche**: usar para evitar fome forte no fim da tarde:
+- iogurte proteico;
+- ovo + fruta;
+- whey;
+- pão pequeno com proteína.
+
+**Jantar**: mais leve que almoço:
+- proteína + vegetais;
+- sopa com proteína;
+- omelete;
+- carne/frango com salada.
+
+## Pontos fortes do plano
+
+- Tem meta clara.
+- Usa média móvel, não peso isolado.
+- Tem alimentação realista.
+- Tem treino de força como base.
+- Tem alertas cardiovasculares.
+- Tem auditoria via CSV/estado/git.
+
+## Pontos fracos controlados
+
+- Meta 78 até 31/12 é agressiva.
+- Estimativa calórica por texto/foto tem erro.
+- Proteína alta pode ser difícil sem planejamento.
+- Cardio/treino demais pode aumentar fome.
+- Sem medicação detalhada no repo, regras clínicas precisam ser conservadoras.
+
+## Critério de sucesso
+
+Sucesso não é só bater 78 kg. Ordem correta:
+
+1. Segurança clínica.
+2. Aderência semanal.
+3. Preservar força/massa magra.
+4. Chegar a 92 kg.
+5. Perseguir 78 kg até 31/12 se os dados mostrarem que o ritmo é sustentável.
