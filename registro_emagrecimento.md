@@ -127,3 +127,12 @@ que diziam "homem, 45 anos, sem comorbidades, sem medicação".
 - Média 7d: 99,95 kg
 - Origem: balança okok
 - Alerta: iniciou cardio liberado, próximo marco 99,0 kg em ~13 dias (2026-06-21)
+
+## 2026-06-08 — 1º treino da fase
+
+- **Peso**: 99,95 kg (5:42, manual, check-in #1)
+- **Treino**: caminhada/esteira, Matrix, 5.5 speed, ~30 min, 14 METS
+- **Inclinação**: 0.0 (primeiro treino, sem exagero)
+- **FC**: não monitorada (sem cinta/relógio ainda)
+
+Completo: sim ✅
