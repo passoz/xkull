@@ -131,7 +131,7 @@ que diziam "homem, 45 anos, sem comorbidades, sem medicação".
 ## 2026-06-08 — 1º treino da fase
 
 - **Peso**: 99,95 kg (5:42, manual, check-in #1)
-- **Treino**: caminhada/esteira, Matrix, 5.5 speed, ~30 min, 14 METS
+- **Treino**: caminhada/esteira, Matrix, 5.5→6.0 km/h, 25 min, 14 METS
 - **Inclinação**: 0.0 (primeiro treino, sem exagero)
 - **FC**: não monitorada (sem cinta/relógio ainda)
 
