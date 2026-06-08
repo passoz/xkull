@@ -119,3 +119,11 @@ que diziam "homem, 45 anos, sem comorbidades, sem medicação".
 - Nome do cardiologista e data da liberação.
 - Data do último teste de esforço (se houve).
 - Avaliação com nutricionista para meta de sódio e perfil lipídico.
+
+## 2026-06-08 — 1ª pesagem pós-início
+
+- Peso: **99,95 kg** (5:42, manual)
+- Δ vs início (07/06): **-1,05 kg**
+- Média 7d: 99,95 kg
+- Origem: balança okok
+- Alerta: iniciou cardio liberado, próximo marco 99,0 kg em ~13 dias (2026-06-21)

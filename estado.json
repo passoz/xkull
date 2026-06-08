@@ -1,20 +1,22 @@
 {
   "versao": 1,
-  "data_atualizacao": "2026-06-07",
+  "data_atualizacao": "2026-06-08",
   "pessoa": {
-    "iniciais": "",
+    "iniciais": "FP",
     "data_inicio_plano": "2026-06-07"
   },
   "biometria": {
     "altura_cm": 173,
-    "idade": 45,
+    "idade": 48,
     "sexo": "M",
-    "tmb_kcal": 1871,
-    "tdee_kcal": 2575
+    "tmb_kcal": 1850,
+    "tdee_kcal": 2550,
+    "historico_cv": "IAM set/2024, 3 stents, PA controlada, liberado cardio"
   },
   "saude": {
-    "comorbidades": [],
+    "comorbidades": ["cardiopatia_isquemica (3 stents)"],
     "medicacao": [],
+    "cuidados": "cardio_liberado | anotar_PA_semanal | preencher_medicacao_apos_cardio",
     "rybelsus": {
       "status": "suspenso",
       "data_suspensao": null,
@@ -26,10 +28,11 @@
   "semana_plano": 1,
   "data_inicio": "2026-06-07",
   "peso": {
-    "atual_kg": 101.0,
+    "atual_kg": 99.95,
     "inicio_plano_kg": 101.0,
-    "media_7d_kg": null,
-    "delta_semanal_kg": null,
+    "media_7d_kg": 99.95,
+    "delta_semanal_kg": -1.05,
+    "delta_total_kg": -1.05,
     "meta_fase_kg": 99.0,
     "meta_intermediaria_kg": 92.0,
     "meta_final_kg": 78.0,
@@ -37,7 +40,7 @@
     "data_meta_final": "2027-04-15"
   },
   "macros_hoje": {
-    "data": "2026-06-07",
+    "data": "2026-06-08",
     "tipo_dia": "treino",
     "kcal": 2250,
     "proteina_g": 160,
@@ -64,9 +67,10 @@
     "delta_aderencia_pct": 0
   },
   "alertas": [
-    "inicio_plano"
+    "primeira_pesagem_pos_inicio",
+    "preencher_medicacao_apos_consulta_cardio"
   ],
-  "ultima_revisao_semanal": "2026-06-07",
+  "ultima_revisao_semanal": "2026-06-08",
   "proximos_marcos": [
     {
       "peso_kg": 99.0,
@@ -89,5 +93,13 @@
     "ultima_diastolica": null,
     "media_sistolica": null,
     "media_diastolica": null
+  },
+  "fontes": {
+    "peso": "manual",
+    "treino": "manual",
+    "pa": "manual",
+    "amazfit_ativo": false,
+    "balanca_conectada": false,
+    "health_connect_pronto": false
   }
 }
