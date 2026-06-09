@@ -101,6 +101,6 @@
     "pa": "manual",
     "amazfit_ativo": false,
     "balanca_conectada": false,
-    "health_connect_pronto": false
+    "health_connect_pronto": true
   }
 }
