@@ -18,4 +18,5 @@ data,refeicao,alimento,porcao,kcal,proteina_g,carbo_g,gordura_g
 2026-06-09,almoco,costela_bovina,1 porção,300,35,0,18
 2026-06-09,almoco,couve_refogada,1 porção,10,1,1,0
 2026-06-09,almoco,tomate_cru,1 unidade pequena,10,0.5,2,0
-2026-06-09,lanche,banana_prata,1 unid,40,0.5,10,0
+2026-06-09,almoco,banana_prata,1 unid,40,0.5,10,0
+2026-06-09,lanche,sanduiche_pao_forma_ovo_azeite_queijo_prato_peru,1 unid,370,21,28,19
