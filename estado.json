@@ -96,7 +96,7 @@
     "media_diastolica": null
   },
   "fontes": {
-    "peso": "manual",
+    "peso": "health_connect",
     "treino": "manual",
     "pa": "manual",
     "amazfit_ativo": false,

@@ -25,8 +25,9 @@ Responde com: `100,8 sim` ou `100,8 não`. Só isso.
 
 ## Quando o Health Connect estiver configurado
 
-- Peso puxa automático às 5:35 via skill `health_connect`
-- Check-in vira só: "Treino hoje? [sim/não]"
+- Peso puxa automático às 5:35 via skill `health_connect` ✅ **ATIVO desde 2026-06-08**
+- Check-in vira só: "Treino hoje? [sim/não]" ✅
+- Fernando não reporta mais peso manualmente — fonte única é o Health Connect
 
 ## Tom
 
